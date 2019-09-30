@@ -24,5 +24,10 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+    compile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.0.13.Final'
+    compile group: 'org.springframework', name: 'spring-web', version: '5.1.10.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '5.1.10.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: "$springBootVersion"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-json', version: "$springBootVersion"
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: "$springBootVersion"
 }
