@@ -30,4 +30,13 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: "$springBootVersion"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-json', version: "$springBootVersion"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: "$springBootVersion"
+    testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
 }
+
+bootRun.environment([
+        "WELCOME_MESSAGE": "hello",
+])
+
+test.environment([
+        "WELCOME_MESSAGE": "Hello from test",
+])
