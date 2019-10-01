@@ -31,6 +31,7 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-json', version: "$springBootVersion"
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: "$springBootVersion"
     testCompile("org.springframework.boot:spring-boot-starter-test:$springBootVersion")
+    testCompile("org.mockito:mockito-core:2.23.4")
 }
 
 bootRun.environment([
