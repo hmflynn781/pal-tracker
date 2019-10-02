@@ -2,7 +2,7 @@ package io.pivotal.pal.tracker;
 
 import java.util.*;
 
-public class InMemoryTimeEntryRepository {
+public class InMemoryTimeEntryRepository implements TimeEntryRepository {
     private int count;
     private Map<Long, TimeEntry> database;
 
